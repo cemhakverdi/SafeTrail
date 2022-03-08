@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.safetrail">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AdminPanelNew">
+        <activity
+            android:name="com.example.safetrail.ViewLines"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity android:name="com.example.safetrail.FirstClassSeatSelector" />
+        <activity android:name="com.example.safetrail.CoronaMap" />
+        <activity android:name="com.example.safetrail.SuitableTrains" />
+        <activity android:name="com.example.safetrail.PurchaseSuccessful" />
+        <activity android:name="com.example.safetrail.Purchase" />
+        <activity android:name="com.example.safetrail.EconomySeatSelector" />
+        <activity android:name="com.example.safetrail.TicketOperator" />
+        <activity android:name="com.example.safetrail.TrainMap" />
+        <activity android:name="com.example.safetrail.UserInfo" />
+        <activity android:name="com.example.safetrail.TicketInfo" />
+        <activity android:name="com.example.safetrail.Tickets" />
+        <activity android:name="com.example.safetrail.QuickBuy" />
+        <activity android:name="com.example.safetrail.Search" />
+        <activity android:name="com.example.safetrail.SignUp" />
+        <activity android:name="com.example.safetrail.SignIn">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.safetrail.StartTheRide"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.RemoveStation"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.AddStation"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.ChangeLine"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.RemoveLine"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.AddLine"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.RemoveWagon"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.AddWagon"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.ChangeTrain"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.RemoveTrain"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.AddTrain"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.SeeCustomers"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.BanCustomer"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.GiveADiscount"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.Schedule"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.LineOperations"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.Admin"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.TrainOperations"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+        <activity
+            android:name="com.example.safetrail.ViewTrains"
+            android:theme="@style/Theme.AdminPanelNew.NoActionBar" />
+    </application>
+
+</manifest>

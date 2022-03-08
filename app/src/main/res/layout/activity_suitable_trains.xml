@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SuitableTrains">
+
+    <Button
+        android:id="@+id/MyProfileButton"
+        app:backgroundTint="@color/lilac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:insetBottom="0dp"
+        android:text="@string/MyProfileButtonName"
+        tools:layout_editor_absoluteX="136dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+    <Button
+        android:id="@+id/QuickBuyButton"
+        app:backgroundTint="@color/lilac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:insetBottom="0dp"
+        android:text="@string/QuickBuyButtonName"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        app:backgroundTint="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/baby_blue"
+        android:insetBottom="0dp"
+        android:text="@string/searchButtonName"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/SuitableTrains"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/ticketListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="156dp"
+        android:layout_marginBottom="80dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/MyProfileButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:visibility="visible" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

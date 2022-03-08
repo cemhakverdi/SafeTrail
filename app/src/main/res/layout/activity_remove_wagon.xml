@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveWagon">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac"
+        android:theme="@style/Theme.AdminPanelNew.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_remove_wagon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/tab_text_22"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/remove_wagon_number"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Wagon Number"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="8dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <EditText
+        android:id="@+id/remove_seat_amount"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Train ID"
+        android:layout_marginTop="143dp"
+        android:layout_marginStart="8dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+
+    <Button
+        android:id="@+id/remove_wagon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Wagon"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/pastel_green"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/view_wagon"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="View Trains"-->
+    <!--        android:layout_marginStart="195dp"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:backgroundTint="@color/pastel_green"-->
+    <!--        tools:layout_editor_absoluteX="150dp"-->
+    <!--        tools:layout_editor_absoluteY="380dp" />-->
+
+    <ListView
+        android:id="@+id/list_view_remove_wagon"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_remove_train"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

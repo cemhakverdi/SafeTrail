@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/depcityText"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    app:backgroundTint="@color/lilac"
+    tools:context=".Search">
+
+    <EditText
+        android:id="@+id/editTextTextPersonName5"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:enabled="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Year"
+        app:layout_constraintBottom_toTopOf="@+id/daySpinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/MyProfileButton"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:insetBottom="0dp"
+        android:text="@string/MyProfileButtonName"
+        app:backgroundTint="@color/lilac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/QuickBuyButton"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:insetBottom="0dp"
+        android:text="@string/QuickBuyButtonName"
+        app:backgroundTint="@color/lilac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/baby_blue"
+        android:insetBottom="0dp"
+        android:text="@string/searchButtonName"
+        app:backgroundTint="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/TrainMapButton"
+        android:layout_width="141dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/TrainMapButtonName"
+        app:backgroundTint="@color/pastel_green"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/CoronaMapButton"
+        android:layout_width="141dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="@string/CoronaMapButtonName"
+        app:backgroundTint="@color/pastel_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/FindTrainsButton"
+        android:layout_width="138dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="86dp"
+        android:text="@string/FindTrains"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/pastel_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monthSpinner" />
+
+    <Spinner
+        android:id="@+id/destinationCitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#C2E1FF"
+        android:padding="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/departureCitySpinner" />
+
+    <Spinner
+        android:id="@+id/monthSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="150dp"
+        android:layout_marginRight="150dp"
+        android:background="#C2E1FF"
+        android:padding="1sp"
+        app:layout_constraintEnd_toStartOf="@+id/yearSpinner"
+        app:layout_constraintStart_toEndOf="@+id/daySpinner"
+        app:layout_constraintTop_toBottomOf="@+id/destinationCitySpinner" />
+
+    <Spinner
+        android:id="@+id/yearSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="275dp"
+        android:layout_marginLeft="275dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#C2E1FF"
+        android:padding="1sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destinationCitySpinner" />
+
+    <Spinner
+        android:id="@+id/daySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="280dp"
+        android:layout_marginRight="280dp"
+        android:background="#C2E1FF"
+        android:padding="1sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/destinationCitySpinner" />
+
+    <Spinner
+        android:id="@+id/departureCitySpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="148dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="#C2E1FF"
+        android:padding="5sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="Departure City:"
+        app:layout_constraintBottom_toTopOf="@+id/departureCitySpinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="Destination City:"
+        app:layout_constraintBottom_toTopOf="@+id/destinationCitySpinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType=""
+        android:text="Day"
+        app:layout_constraintBottom_toTopOf="@+id/daySpinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="99dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="156dp"
+        android:layout_marginLeft="156dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="Month"
+        app:layout_constraintBottom_toTopOf="@+id/daySpinner"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

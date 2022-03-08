@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GiveADiscount">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac"
+        android:theme="@style/Theme.AdminPanelNew.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/tab_text_17"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/editTextPricing_discount1"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="150dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAlignment="textEnd" />
+
+    <EditText
+        android:id="@+id/editTextPricing_discount2"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="90dp"
+        android:ems="10"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/textView_discount1"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="142dp"
+        android:layout_marginStart="60dp"
+        android:textColor="@color/black"
+        android:text="@string/tab_text_19" />
+
+    <TextView
+        android:id="@+id/textView_discount3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="60dp"
+        android:textColor="@color/black"
+        android:text="@string/tab_text_18" />
+
+    <TextView
+        android:id="@+id/textView_discount4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="168dp"
+        android:layout_marginStart="340dp"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:text="@string/tab_text_13" />
+
+    <Button
+        android:id="@+id/button_proceed_discount"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="210dp"
+        android:background="@color/pastel_green"
+        android:backgroundTint="@color/pastel_green"
+        android:text="@string/tab_text_8"
+        app:backgroundTint="#9CD9DB" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager_discount"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

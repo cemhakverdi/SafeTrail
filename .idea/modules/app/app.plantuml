@@ -1,0 +1,344 @@
+@startuml
+
+title __ADMÝNPANELNEW.APP's Class Diagram__\n
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.AddLine {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.AddStation {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.AddTrain {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.AddWagon {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Admin {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.BanCustomer {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.BuildConfig {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.ChangeLine {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.ChangeTrain {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Corona_Map {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.CustomerManagement {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.CustomerView {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.DatabaseAccess {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.DatabaseHelper {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.FirstClass {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Fragment_information {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Fragment_second {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.GiveADiscount {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Information {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.LineOperations {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Purchase {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.PurchaseSuccessful {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Quick_Buy {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.RemoveLine {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.RemoveStation {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.RemoveTrain {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.RemoveWagon {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Schedule {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Search {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.SeatSelector {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.See_Customers {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.SignIn {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.SignUp {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.StartTheRide {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.SuitableTrains {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.TicketInfo {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.TicketOperator {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Tickets {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.TrainManagement {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.TrainOperations {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.Train_Map {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.UserInfo {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    class com.example.adminpanelnew.ViewTrains {
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    namespace ui.main {
+      class com.example.adminpanelnew.ui.main.PageViewModel {
+      }
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    namespace ui.main {
+      class com.example.adminpanelnew.ui.main.PlaceholderFragment {
+      }
+    }
+  }
+  
+
+  namespace com.example.adminpanelnew {
+    namespace ui.main {
+      class com.example.adminpanelnew.ui.main.SectionsPagerAdapter {
+      }
+    }
+  }
+  
+
+  com.example.adminpanelnew.AddLine -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.AddStation -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.AddTrain -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.AddWagon -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Admin -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.BanCustomer -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.ChangeLine -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.ChangeTrain -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Corona_Map -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.CustomerManagement -up-|> androidx.fragment.app.Fragment
+  com.example.adminpanelnew.CustomerView -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.DatabaseHelper -up-|> com.readystatesoftware.sqliteasset.SQLiteAssetHelper
+  com.example.adminpanelnew.FirstClass -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Fragment_information -up-|> androidx.fragment.app.Fragment
+  com.example.adminpanelnew.Fragment_second -up-|> androidx.fragment.app.Fragment
+  com.example.adminpanelnew.GiveADiscount -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Information -up-|> androidx.fragment.app.Fragment
+  com.example.adminpanelnew.LineOperations -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Purchase -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.PurchaseSuccessful -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Quick_Buy -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.RemoveLine -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.RemoveStation -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.RemoveTrain -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.RemoveWagon -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Schedule -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Search -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.SeatSelector -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.See_Customers -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.SignIn -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.SignUp -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.StartTheRide -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.SuitableTrains -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.TicketInfo -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.TicketOperator -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Tickets -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.TrainManagement -up-|> androidx.fragment.app.Fragment
+  com.example.adminpanelnew.TrainOperations -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.Train_Map -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.UserInfo -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.ViewTrains -up-|> androidx.appcompat.app.AppCompatActivity
+  com.example.adminpanelnew.ui.main.PageViewModel -up-|> androidx.lifecycle.ViewModel
+  com.example.adminpanelnew.ui.main.PlaceholderFragment -up-|> androidx.fragment.app.Fragment
+  com.example.adminpanelnew.ui.main.PlaceholderFragment o-- com.example.adminpanelnew.ui.main.PageViewModel : pageViewModel
+  com.example.adminpanelnew.ui.main.SectionsPagerAdapter -up-|> androidx.fragment.app.FragmentPagerAdapter
+  com.example.adminpanelnew.ui.main.SectionsPagerAdapter o-- com.example.adminpanelnew.CustomerManagement : customerManagement
+  com.example.adminpanelnew.ui.main.SectionsPagerAdapter o-- com.example.adminpanelnew.Information : information
+  com.example.adminpanelnew.ui.main.SectionsPagerAdapter o-- com.example.adminpanelnew.TrainManagement : trainManagement
+
+
+right footer
+
+
+PlantUML diagram generated by SketchIt! (https://bitbucket.org/pmesmeur/sketch.it)
+For more information about this tool, please contact philippe.mesmeur@gmail.com
+endfooter
+
+@enduml

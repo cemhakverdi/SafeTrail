@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveLine">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac"
+        android:theme="@style/Theme.AdminPanelNew.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_remove_line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="Remove Line"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Spinner
+        android:id="@+id/spinner_remove_line"
+        android:layout_width="325dp"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="515dp"
+        android:hint="Line ID"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/remove_line_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Line"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/pastel_green"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <Button
+        android:id="@+id/view_lines_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Lines"
+        android:layout_marginStart="215dp"
+        android:layout_marginTop="150dp"
+        android:backgroundTint="@color/pastel_green"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <ListView
+        android:id="@+id/list_view_remove_line"
+        android:layout_width="wrap_content"
+        android:layout_height="460dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="160dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_add_line"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketOperator">
+
+    <Button
+        android:id="@+id/bottomProfile"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:backgroundTint="#A3A1F5"
+        android:text="My Profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bottomQuickBuy"
+        app:layout_constraintStart_toEndOf="@+id/bottomSearch" />
+
+    <CheckBox
+        android:id="@+id/economyCheck"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:text="@string/economy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.175" />
+
+    <CheckBox
+        android:id="@+id/firstClassCheck"
+        android:layout_width="123dp"
+        android:layout_height="51dp"
+        android:text="@string/first_class"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.14"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.081" />
+
+    <Spinner
+        android:id="@+id/ExtraServices"
+        android:layout_width="296dp"
+        android:layout_height="32dp"
+        android:background="#C2E1FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/economyCheck"
+        app:layout_constraintVertical_bias="0.244" />
+
+    <Spinner
+        android:id="@+id/LuggageType"
+        android:layout_width="296dp"
+        android:layout_height="32dp"
+        android:background="#C2E1FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/economyCheck"
+        app:layout_constraintVertical_bias="0.093" />
+
+    <Spinner
+        android:id="@+id/WagonSelection"
+        android:layout_width="296dp"
+        android:layout_height="32dp"
+        android:background="#C2E1FF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/economyCheck"
+        app:layout_constraintVertical_bias="0.403" />
+
+    <Button
+        android:id="@+id/proceedToSeatSelection"
+        android:layout_width="345dp"
+        android:layout_height="46dp"
+        android:backgroundTint="#A3A1F5"
+        android:text="@string/proceed_to_seat_selection"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.621"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WagonSelection"
+        app:layout_constraintVertical_bias="0.424" />
+
+    <Button
+        android:id="@+id/bottomQuickBuy"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:backgroundTint="#A3A1F5"
+        android:text="Quick Buy"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bottomSearch"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/baby_blue"
+        android:backgroundTint="#C2E1FF"
+        android:text="Search"
+        app:backgroundTint="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="24dp"
+        android:editable="false"
+        android:text="TextView"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="Wagon"
+        app:layout_constraintBottom_toTopOf="@+id/WagonSelection"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="Luggage Type"
+        app:layout_constraintBottom_toTopOf="@+id/LuggageType"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:enabled="false"
+        android:text="Extra Services"
+        app:layout_constraintBottom_toTopOf="@+id/ExtraServices"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

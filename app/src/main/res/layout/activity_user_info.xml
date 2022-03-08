@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketInfo">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="User Information"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/TicketInformationMenuButton"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"
+        android:layout_marginTop="5dp"
+        android:background="#FFFFFF"
+        android:text="Tickets"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/lilac"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/UserInformationMenuButton"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginRight="21dp"
+        android:background="#FFFFFF"
+        android:text="User Information"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@color/baby_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:ignore="MissingConstraints" />
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="160dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/userNameText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Departure Time: " />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/TicketInformationMenuButton">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ticket ID: " />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/discountText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Seat: " />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/hesText"
+                        android:layout_width="match_parent"
+                        android:layout_height="63dp"
+                        android:text="Destination City: " />
+                </com.google.android.material.textfield.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/MyProfileButton"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:background="@color/baby_blue"
+        android:insetBottom="0dp"
+        android:text="@string/MyProfileButtonName"
+        app:backgroundTint="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/QuickBuyButton"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:insetBottom="0dp"
+        android:text="@string/QuickBuyButtonName"
+        app:backgroundTint="@color/lilac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteX="274dp"
+        tools:layout_editor_absoluteY="674dp" />
+
+    <Button
+        android:id="@+id/SearchButton"
+        android:layout_width="137dp"
+        android:layout_height="56dp"
+        android:background="@color/lilac"
+        android:insetBottom="0dp"
+        android:text="@string/searchButtonName"
+        app:backgroundTint="@color/lilac"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/LogOutButton"
+        android:layout_width="330dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/pastel_green"
+        android:text="Log Out"
+        app:backgroundTint="@color/pastel_green"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

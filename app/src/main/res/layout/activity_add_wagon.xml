@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddWagon">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac"
+        android:theme="@style/Theme.AdminPanelNew.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_add_wagon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/tab_text_22"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/wagon_number"
+        android:layout_width="325dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Wagon Number"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="506dp" />
+
+    <Spinner
+        android:id="@+id/spinner_wagon_first_class"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginStart="20dp"
+        android:hint="Wagon Type"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner_wagon_train_id"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="143dp"
+        android:layout_marginStart="197dp"
+        android:hint="Train ID"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/add_wagon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Wagon"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="200dp"
+        android:backgroundTint="@color/pastel_green"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <!--    <Button-->
+    <!--        android:id="@+id/view_wagon"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="View Trains"-->
+    <!--        android:layout_marginStart="195dp"-->
+    <!--        android:layout_marginTop="200dp"-->
+    <!--        android:backgroundTint="@color/pastel_green"-->
+    <!--        tools:layout_editor_absoluteX="150dp"-->
+    <!--        tools:layout_editor_absoluteY="380dp" />-->
+
+    <ListView
+        android:id="@+id/list_view_add_wagon"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_add_train"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

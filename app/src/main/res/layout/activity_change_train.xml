@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeTrain">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_change_train"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac"
+        android:theme="@style/Theme.AdminPanelNew.AppBarOverlay">
+
+        <TextView
+            android:id="@+id/title_change_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/tab_text_4"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+        <ListView
+            android:id="@+id/list_view_change_train"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:background="@color/baby_blue" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+</RelativeLayout>

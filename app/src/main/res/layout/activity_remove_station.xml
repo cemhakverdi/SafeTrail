@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RemoveStation">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout_remove_station"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac"
+        android:theme="@style/Theme.AdminPanelNew.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_remove_station"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="Remove Station"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Spinner
+        android:id="@+id/remove_line_station_id"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="515dp"
+        android:background="@color/baby_blue"
+        android:hint="Line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/remove_station_id"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="515dp"
+        android:background="@color/baby_blue"
+        android:hint="Line"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    <Button
+        android:id="@+id/remove_station_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remove Station"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="210dp"
+        android:backgroundTint="@color/pastel_green"
+        tools:layout_editor_absoluteX="150dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <ListView
+        android:id="@+id/list_view_add_train"
+        android:layout_width="wrap_content"
+        android:layout_height="380dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/white"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_add_train"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" >
+
+
+    </androidx.viewpager.widget.ViewPager>
+
+</RelativeLayout>

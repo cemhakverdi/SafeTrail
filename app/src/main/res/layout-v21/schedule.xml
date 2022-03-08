@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Schedule">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lilac"
+        android:theme="@style/Theme.AdminPanelNew.AppBarOverlay"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/tab_text_6"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <Spinner
+        android:id="@+id/spinner_schedule"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="515dp"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="515dp"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner21"
+        android:layout_width="85dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="155dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="515dp"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner22"
+        android:layout_width="89dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="250dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="515dp"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="135dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="480dp"
+        android:background="@color/baby_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/button_proceed_schedule"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="270dp"
+        android:background="@color/pastel_green"
+        android:backgroundTint="@color/pastel_green"
+        android:text="@string/tab_text_8"
+        app:backgroundTint="#9CD9DB" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/view_pager4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>
